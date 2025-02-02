@@ -1,10 +1,10 @@
-app_name = "primero_app"
-app_title = "Primero Website Configuration Setup"
+app_name = "primero_website"
+app_title = "Primero Website"
 app_publisher = "Taiwo Akinosho"
-app_description = "Primero Custom App"
+app_description = "Primero Website "
 app_email = "tiwiex@yahoo.com"
 app_license = "mit"
-#Tiwiex
+
 # Apps
 # ------------------
 
@@ -13,11 +13,11 @@ app_license = "mit"
 # Each item in the list will be shown as an app in the apps page
 # add_to_apps_screen = [
 # 	{
-# 		"name": "primero_app",
-# 		"logo": "/assets/primero_app/logo.png",
-# 		"title": "Primero Website Configuration Setup",
-# 		"route": "/primero_app",
-# 		"has_permission": "primero_app.api.permission.has_app_permission"
+# 		"name": "primero_website",
+# 		"logo": "/assets/primero_website/logo.png",
+# 		"title": "Primero Website",
+# 		"route": "/primero_website",
+# 		"has_permission": "primero_website.api.permission.has_app_permission"
 # 	}
 # ]
 
@@ -25,15 +25,15 @@ app_license = "mit"
 # ------------------
 
 # include js, css files in header of desk.html
-# app_include_css = "/assets/primero_app/css/primero_app.css"
-# app_include_js = "/assets/primero_app/js/primero_app.js"
+# app_include_css = "/assets/primero_website/css/primero_website.css"
+# app_include_js = "/assets/primero_website/js/primero_website.js"
 
 # include js, css files in header of web template
-# web_include_css = "/assets/primero_app/css/primero_app.css"
-# web_include_js = "/assets/primero_app/js/primero_app.js"
+# web_include_css = "/assets/primero_website/css/primero_website.css"
+# web_include_js = "/assets/primero_website/js/primero_website.js"
 
 # include custom scss in every website theme (without file extension ".scss")
-# website_theme_scss = "primero_app/public/scss/website"
+# website_theme_scss = "primero_website/public/scss/website"
 
 # include js, css files in header of web form
 # webform_include_js = {"doctype": "public/js/doctype.js"}
@@ -51,7 +51,7 @@ app_license = "mit"
 # Svg Icons
 # ------------------
 # include app icons in desk
-# app_include_icons = "primero_app/public/icons.svg"
+# app_include_icons = "primero_website/public/icons.svg"
 
 # Home Pages
 # ----------
@@ -75,43 +75,43 @@ app_license = "mit"
 
 # add methods and filters to jinja environment
 # jinja = {
-# 	"methods": "primero_app.utils.jinja_methods",
-# 	"filters": "primero_app.utils.jinja_filters"
+# 	"methods": "primero_website.utils.jinja_methods",
+# 	"filters": "primero_website.utils.jinja_filters"
 # }
 
 # Installation
 # ------------
 
-# before_install = "primero_app.install.before_install"
-# after_install = "primero_app.install.after_install"
+# before_install = "primero_website.install.before_install"
+# after_install = "primero_website.install.after_install"
 
 # Uninstallation
 # ------------
 
-# before_uninstall = "primero_app.uninstall.before_uninstall"
-# after_uninstall = "primero_app.uninstall.after_uninstall"
+# before_uninstall = "primero_website.uninstall.before_uninstall"
+# after_uninstall = "primero_website.uninstall.after_uninstall"
 
 # Integration Setup
 # ------------------
 # To set up dependencies/integrations with other apps
 # Name of the app being installed is passed as an argument
 
-# before_app_install = "primero_app.utils.before_app_install"
-# after_app_install = "primero_app.utils.after_app_install"
+# before_app_install = "primero_website.utils.before_app_install"
+# after_app_install = "primero_website.utils.after_app_install"
 
 # Integration Cleanup
 # -------------------
 # To clean up dependencies/integrations with other apps
 # Name of the app being uninstalled is passed as an argument
 
-# before_app_uninstall = "primero_app.utils.before_app_uninstall"
-# after_app_uninstall = "primero_app.utils.after_app_uninstall"
+# before_app_uninstall = "primero_website.utils.before_app_uninstall"
+# after_app_uninstall = "primero_website.utils.after_app_uninstall"
 
 # Desk Notifications
 # ------------------
 # See frappe.core.notifications.get_notification_config
 
-# notification_config = "primero_app.notifications.get_notification_config"
+# notification_config = "primero_website.notifications.get_notification_config"
 
 # Permissions
 # -----------
@@ -150,39 +150,39 @@ app_license = "mit"
 
 # scheduler_events = {
 # 	"all": [
-# 		"primero_app.tasks.all"
+# 		"primero_website.tasks.all"
 # 	],
 # 	"daily": [
-# 		"primero_app.tasks.daily"
+# 		"primero_website.tasks.daily"
 # 	],
 # 	"hourly": [
-# 		"primero_app.tasks.hourly"
+# 		"primero_website.tasks.hourly"
 # 	],
 # 	"weekly": [
-# 		"primero_app.tasks.weekly"
+# 		"primero_website.tasks.weekly"
 # 	],
 # 	"monthly": [
-# 		"primero_app.tasks.monthly"
+# 		"primero_website.tasks.monthly"
 # 	],
 # }
 
 # Testing
 # -------
 
-# before_tests = "primero_app.install.before_tests"
+# before_tests = "primero_website.install.before_tests"
 
 # Overriding Methods
 # ------------------------------
 #
 # override_whitelisted_methods = {
-# 	"frappe.desk.doctype.event.event.get_events": "primero_app.event.get_events"
+# 	"frappe.desk.doctype.event.event.get_events": "primero_website.event.get_events"
 # }
 #
 # each overriding function accepts a `data` argument;
 # generated from the base implementation of the doctype dashboard,
 # along with any modifications made in other Frappe apps
 # override_doctype_dashboards = {
-# 	"Task": "primero_app.task.get_dashboard_data"
+# 	"Task": "primero_website.task.get_dashboard_data"
 # }
 
 # exempt linked doctypes from being automatically cancelled
@@ -196,13 +196,13 @@ app_license = "mit"
 
 # Request Events
 # ----------------
-# before_request = ["primero_app.utils.before_request"]
-# after_request = ["primero_app.utils.after_request"]
+# before_request = ["primero_website.utils.before_request"]
+# after_request = ["primero_website.utils.after_request"]
 
 # Job Events
 # ----------
-# before_job = ["primero_app.utils.before_job"]
-# after_job = ["primero_app.utils.after_job"]
+# before_job = ["primero_website.utils.before_job"]
+# after_job = ["primero_website.utils.after_job"]
 
 # User Data Protection
 # --------------------
@@ -232,7 +232,7 @@ app_license = "mit"
 # --------------------------------
 
 # auth_hooks = [
-# 	"primero_app.auth.validate"
+# 	"primero_website.auth.validate"
 # ]
 
 # Automatically update python controller files with type annotations for this app.
