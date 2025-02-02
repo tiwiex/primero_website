@@ -1,32 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Primero Intermediaries & Football Agency Ltd</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <link rel="stylesheet" href="assets/css/main.css">
-    <link rel="stylesheet" href="assets/css/components/navbar.css">
-    <link rel="stylesheet" href="assets/css/components/footer.css">
-    <link rel="stylesheet" href="assets/css/pages/about.css">
-</head>
-<body>
-    <!-- Navigation -->
-    <nav class="navbar">
-        <div class="container navbar-container">
-            <a href="index.html" class="navbar-logo">
-                <img src="assets/images/cropped-primero-logo.png" alt="Primero" class="logo-img">
-            </a>
-            <ul class="nav-menu">
-                <li><a href="index.html" class="nav-link">Home</a></li>
-                <li><a href="about.html" class="nav-link active">About Us</a></li>
-                <li><a href="news.html" class="nav-link">News</a></li>
-                <li><a href="contact.html" class="nav-link">Contact</a></li>
-            </ul>
-        </div>
-    </nav>
+    {% extends 'templates/base.html' %}
+    {% block title %}About Us - Primero Intermediaries & Football Agency Ltd{% endblock %}
 
+
+{% block content %}
     <!-- After navbar -->
     <header class="about-header">
         <div class="container">
@@ -114,42 +90,4 @@
         </div>
     </section>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-info">
-                    <h3>Primero Intermediaries</h3>
-                    <p>Your trusted partner in football representation</p>
-                    <div class="footer-contact-details">
-                        <p><i class="fas fa-map-marker-alt"></i> 18 St Margarets Rd, Wyton<br>
-                        Huntingdon PE28 2AN, UK</p>
-                        <p><i class="fas fa-phone"></i> +44 7984 913009</p>
-                        <p><i class="fas fa-envelope"></i> info@primeroagency.com</p>
-                    </div>
-                </div>
-                <div class="footer-links">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                        <li><a href="news.html">News</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-social">
-                    <h4>Follow Us</h4>
-                    <div class="social-links">
-                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
-                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
-                    </div>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 Primero Intermediaries. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-</body>
-</html> 
+{% endblock %}

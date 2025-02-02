@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="/assets/primero_app/css/main.css">
+    <link rel="stylesheet" href="/assets/primero_app/css/components/navbar.css">
+    <link rel="stylesheet" href="/assets/primero_app/css/components/buttons.css">
+    <link rel="stylesheet" href="/assets/primero_app/css/components/footer.css">
+    <link rel="stylesheet" href="/assets/primero_app/css/components/player-cards.css">
+    <link rel="stylesheet" href="/assets/primero_app/css/components/process.css">
+    <link rel="stylesheet" href="/assets/primero_app/css/pages/home.css">
+    <link rel="stylesheet" href="/assets/primero_app/css/pages/about.css">
+    <link rel="stylesheet" href="/assets/primero_app/css/pages/news.css">
+    <link rel="stylesheet" href="/assets/primero_app/css/pages/news-article.css">
+    <link rel="stylesheet" href="/assets/primero_app/css/pages/contact.css">
+    <script src="https://kit.fontawesome.com/d0e27e7fe8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container navbar-container">
+            <a href="index.html" class="navbar-logo">
+                <img src="/assets/primero_app/images/cropped-primero-logo.png" alt="Primero" class="logo-img">
+            </a>
+            <ul class="nav-menu">
+                <li><a href="index.html" class="nav-link active">Home</a></li>
+                <li><a href="about.html" class="nav-link">About Us</a></li>
+                <li><a href="news.html" class="nav-link">News</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    {% block content %}
+    {% endblock %}
+
+<!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Primero Intermediaries</h3>
+                    <p>Your trusted partner in football representation</p>
+                    <div class="footer-contact-details">
+                        <p><i class="fas fa-map-marker-alt"></i> 18 St Margarets Rd, Wyton<br>
+                        Huntingdon PE28 2AN, UK</p>
+                        <p><i class="fas fa-phone"></i> +44 7984 913009</p>
+                        <p><i class="fas fa-envelope"></i> info@primeroagency.com</p>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="news.html">News</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Primero Intermediaries. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="/assets/primero_app/js/main.js"></script>
+    <script src="/assets/primero_app/js/components/navbar.js"></script>
+    <script src="/assets/primero_app/js/components/process.js" defer></script>
+</body>
+</html>

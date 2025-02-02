@@ -1,0 +1,79 @@
+/* Base Button Styles */
+.btn {
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    border-radius: 50px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    text-align: center;
+}
+
+/* Primary Button - Yellow */
+.btn-primary {
+    background-color: var(--secondary-color);
+    color: var(--primary-dark);
+    border: none;
+    box-shadow: 0 4px 15px rgba(255, 215, 0, 0.3);
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(255, 215, 0, 0.4);
+}
+
+/* Outline Button - Yellow Border */
+.btn-outline {
+    background: transparent;
+    border: 2px solid var(--secondary-color);
+    color: var(--secondary-color);
+    padding: calc(1rem - 2px) calc(2.5rem - 2px);
+}
+
+.btn-outline:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-dark);
+    transform: translateY(-2px);
+}
+
+/* Light Button Variation */
+.btn-light {
+    background: transparent;
+    border: 2px solid var(--secondary-color);
+    color: var(--secondary-color);
+}
+
+.btn-light:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-dark);
+}
+
+/* Button Sizes */
+.btn-lg {
+    padding: 1.2rem 3rem;
+    font-size: 1.1rem;
+}
+
+.btn-sm {
+    padding: 0.8rem 2rem;
+    font-size: 0.9rem;
+}
+
+/* Button Group */
+.btn-group {
+    display: flex;
+    gap: 1rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .btn {
+        padding: 0.9rem 2rem;
+    }
+    
+    .btn-group {
+        flex-direction: column;
+    }
+} 
